@@ -12,7 +12,6 @@
 }
 .header{
     width: 100%;
-    /* block adaptiv*/
     height: 145px;
     background-color: #fff;
 }
@@ -75,6 +74,9 @@
     font-size: 15px;
     padding: 10px;
 }
+.header-menu-item:hover{
+
+}
 .header-menu-burger{
     display: flex;
     list-style-type: none;
@@ -93,7 +95,7 @@
     line-height: 45px;
 }
 .main-screen{
-    background-image: url("../image/main-screen.svg");
+    background-image: url("../image/main-screen.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -385,7 +387,7 @@
 .about-us-img{
     right: 0;
     width: 100%;
-    background: url(../image/about_us-img.svg);
+    background: url(../image/about_us-img.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -847,7 +849,7 @@
         bottom: 0;
     }
     .offer_content-title{
-        font-size: 20px;
+        font-size: 18px;
     }
     .advantages{
         width: calc(100% - 60px);
