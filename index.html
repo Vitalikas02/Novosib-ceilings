@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <!--<meta http-equiv="Refresh" content="15" />-->
   <title>НСК Натяжные потолки</title>
+  <link rel="icon" href="image/icon.png">
   <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=no">
   <meta name="description" content="Натяжные потолки в Новосибирске по доступной цене!">
@@ -57,20 +58,30 @@
           <nav class="header-menu-nav">
             <div class="header-menu-logo-block">
               <a class="header-menu-logo" href="https://nskpotoloktop.ru">
-                <img src="image/logo.svg"></img>
+                <img src="image/logo.png"></img>
               </a>
               <a class="header-menu-title" href="https://nskpotoloktop.ru">Натяжные потолки</a>
             </div>
-            <div class="header-menu-burger" id="header-menu-burger">
+            <div class="header-menu-burger" id="header-menu-burger" onclick="toggleMenu()" style="display:flex">
               <span></span>
-              <a class="header-menu-item" href="https://nskpotoloktop.ru">Главная</a>
-              <a class="header-menu-item" href="#offer">Виды потолков</a>
-              <a class="header-menu-item" href="#advantages">Преимущества</a>
-              <a class="header-menu-item" href="#promo">Акции</a>
-              <a class="header-menu-item" href="#choose_us">О нас</a>
-              <a class="header-menu-item" href="#out_works">Наши работы</a>
-              <a class="header-menu-item" href="#feedback">Отзывы</a>
-              <a class="header-menu-item" href="#contacts">Контакты</a>
+                <li><a class="header-menu-item" href="https://nskpotoloktop.ru">Главная</a></li>
+                <li><a class="header-menu-item" href="#offer">Виды потолков</a></li>
+                <li><a class="header-menu-item" href="#advantages">Преимущества</a></li>
+                <li><a class="header-menu-item" href="#promo">Акции</a></li>
+                <li><a class="header-menu-item" href="#choose_us">О нас</a></li>
+                <li><a class="header-menu-item" href="#out_works">Наши работы</a></li>
+                <li><a class="header-menu-item" href="#feedback">Отзывы</a></li>
+                <li><a class="header-menu-item" href="#contacts">Контакты</a></li>
+            </div>
+            <div class="header-menu-nav-mobilemenu" id="header-menu-nav-mobilemenu" style="display:none">
+              <li><a class="header-menu-item" id="header-menu-item" href="https://nskpotoloktop.ru">Главная</a></li>
+              <li><a class="header-menu-item" id="header-menu-item" href="#offer">Виды потолков</a></li>
+              <li><a class="header-menu-item" id="header-menu-item" href="#advantages">Преимущества</a></li>
+              <li><a class="header-menu-item" id="header-menu-item" href="#promo">Акции</a></li>
+              <li><a class="header-menu-item" id="header-menu-item" href="#choose_us">О нас</a></li>
+              <li><a class="header-menu-item" id="header-menu-item" href="#out_works">Наши работы</a></li>
+              <li><a class="header-menu-item" id="header-menu-item" href="#feedback">Отзывы</a></li>
+              <li><a class="header-menu-item" id="header-menu-item" href="#contacts">Контакты</a></li>
             </div>
           </nav>
         </div>
@@ -87,7 +98,7 @@
               <button class="main-screen-measurement main-button">
                 <a class="main-button-title" href="#">Записаться на замер</a>
               </button>
-              <button class="main-screen-calculation main-button">
+              <button class="main-screen-calculation main-button" href="#">
                 <a class="main-button-title" href="#">Онлайн расчёт</a>
               </button>
             </div>
@@ -429,7 +440,7 @@
         <div class="how_install-container">
           <div class="how_install-container-img">
             <img src="image/install/how_install-phone-icon.svg"></img>
-            <div class="how_install-container-img-text">Принимаем заявку или звонок</div>
+            <div class="how_install-container-img-text">Принимаем заявку</div>
           </div>
           <div class="how_install-container-arrow">
             <img src="image/install/how_install-arrow_up.svg"></img>
@@ -465,29 +476,53 @@
         <div class="questions-title">Часто задаваемые вопросы</div>
         <div class="questions-container">
           <div class="questions-container-item">
-            <div class="questions-container-item-text">На сколько опустится потолок при установке натяжного?</div>
+            <details>
+              <summary class="questions-container-item-text">На сколько опустится потолок при установке натяжного?</summary>
+              <p class="questions-container-item-subtext">Текст</p>
+            </details>
           </div>
           <div class="questions-container-item">
-            <div class="questions-container-item-text">Можно ли устанавливать в ванной и туалете, не появится ли там
-              плесень от влажности?</div>
+            <details>
+              <summary class="questions-container-item-text">Можно ли устанавливать в ванной и туалете, не появится ли там
+                плесень от влажности?</summary>
+              <p class="questions-container-item-subtext">Текст</p>
+            </details>
           </div>
           <div class="questions-container-item">
-            <div class="questions-container-item-text">Нужно ли отклеивать потолочную плитку?</div>
+            <details>
+              <summary class="questions-container-item-text">Нужно ли отклеивать потолочную плитку?</summary>
+              <p class="questions-container-item-subtext">Текст</p>
+            </details>
           </div>
           <div class="questions-container-item">
-            <div class="questions-container-item-text">Нужно ли полностью освобождать комнату?</div>
+            <details>
+              <summary class="questions-container-item-text">Нужно ли полностью освобождать комнату?</summary>
+              <p class="questions-container-item-subtext">Текст</p>
+            </details>
           </div>
           <div class="questions-container-item">
-            <div class="questions-container-item-text">Как крепится карниз?</div>
+            <details>
+              <summary class="questions-container-item-text">Как крепится карниз?</summary>
+              <p class="questions-container-item-subtext">Текст</p>
+            </details>
           </div>
           <div class="questions-container-item">
-            <div class="questions-container-item-text">Можно ли мыть потолок, и чем?</div>
+            <details>
+              <summary class="questions-container-item-text">Можно ли мыть потолок, и чем?</summary>
+              <p class="questions-container-item-subtext">Текст</p>
+            </details>
           </div>
           <div class="questions-container-item">
-            <div class="questions-container-item-text">Поклейка обоев до, или после потолка?</div>
+            <details>
+              <summary class="questions-container-item-text">Поклейка обоев до, или после потолка?</summary>
+              <p class="questions-container-item-subtext">Текст</p>
+            </details>
           </div>
           <div class="questions-container-item">
-            <div class="questions-container-item-text">При установке потолка очень грязно?</div>
+            <details>
+              <summary class="questions-container-item-text">При установке потолка очень грязно?</summary>
+              <p class="questions-container-item-subtext">Текст</p>
+            </details>
           </div>
         </div>
       </div>
@@ -496,10 +531,10 @@
         <div class="support-subtitle">Отправьте заявку и мы перезвоним в ближайшее время.</div>
         <div class="support-line"></div>
         <div class="support-form-container">
-          <input type="text" class="support-form-container_name" value="Имя"></input>
-          <input type="text" class="support-form-container_phone" value="Телефон"></input>
-          <input type="text" class="support-form-container_mail" value="E-mail"></input>
-          <input type="text" class="support-form-container_message" value="Сообщение"></input>
+          <input type="text" class="support-form-container_name" placeholder="Имя"></input>
+          <input type="text" class="support-form-container_phone" placeholder="Телефон"></input>
+          <input type="text" class="support-form-container_mail" placeholder="E-mail"></input>
+          <input type="text" class="support-form-container_message" placeholder="Сообщение"></input>
         </div>
         <button class="support-button">
           <a class="support-button-text" href="#">Отправить</a>
@@ -511,7 +546,7 @@
         <div class="contacts-address">Адрес: г. Новосибирск, Фадеева 66</div>
         <div class="contacts-phone">Телефон: <br/> 8 (905) 955 - 78 - 38 <br/>
                                                    8 (905) 905 - 78 - 38 </div>
-        <div class="contacts-mail">E-mail: potolki@mail.ru</div>
+        <div class="contacts-mail">E-mail: Maslakov13.02.87@gmail.com	</div>
         <div class="contacts-line"></div>
       </div>
       <div id="map"></div>
@@ -527,8 +562,6 @@
           <div class="footer-right-text">Звоните: </br>
             8 (905) 955 - 78 - 38 </br>
             8 (905) 905 - 78 - 38 </br>
-            E-mail: </br>
-            nskpotoloktop.ru@mail.ru </br>
           </div>
           <div class="footer-right-messangers">
             <a class="footer-right-messangers-telegram" href="#">

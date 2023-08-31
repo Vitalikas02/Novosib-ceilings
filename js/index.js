@@ -1,14 +1,19 @@
 function toggleMenu() {
-    var header = document.getElementById('header-menu-burger');    
-    if(header.style.display == "flex") { // if is menuBox displayed, hide it
-        header.style.display = "none";
+    var headerMenuBurger = document.getElementById('header-menu-burger');
+    var headerMenuMobile = document.getElementById('header-menu-nav-mobilemenu');
+    var jsMenu = document.getElementById('header-menu-nav-mobilemenu');
+    var jsMenuItem = document.getElementById('header-menu-item');
+    if(headerMenuBurger.style.display == 'flex') { // if is menuBox displayed, hide it
+        headerMenuBurger.style.display = 'none';
+        headerMenuMobile.style.display = 'flex';
+        jsMenu.classList.add('js-menu-open');
+        jsMenuItem.style.display = 'block';
     }
     else { // if is menuBox hidden, display it
-      menuBox.style.display = "";
+      headerMenuBurger.style.display = 'flex';
     }
   }
 
-  toggleMenu();
 
 
 
